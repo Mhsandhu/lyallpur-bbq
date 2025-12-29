@@ -1,12 +1,18 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+command = "npm run build"
+publish = "dist"
 
+# ✅ Allow Decap CMS admin panel
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/admin/*"
+to = "/admin/index.html"
+status = 200
+
+# ✅ SPA routing (website pages)
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
 
 [build.environment]
-  NODE_VERSION = "18"
-
+NODE_VERSION = "18"
