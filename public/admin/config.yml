@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu"
+        label: "Menu Items"
+        file: "public/data/menu.json"
+        format: "json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - label: "ID"
+                name: "id"
+                widget: "string"
+                required: true
+
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: true
+
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                default: "Special BBQ"
+
+              - label: "Portion"
+                name: "portion"
+                widget: "string"
+                required: false
+
+              - label: "Price"
+                name: "price"
+                widget: "number"
+                required: true
+                value_type: "int"
+                min: 0
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                required: false
+
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
