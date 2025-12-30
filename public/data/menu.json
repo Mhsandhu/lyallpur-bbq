@@ -7,7 +7,9 @@
       "portion": "portion L/B",
       "price": 330,
       "description": "Tender marinated chicken pieces grilled to perfection",
-      "tags": ["Bestseller"],
+      "tags": [
+        "Bestseller"
+      ],
       "image": "/images/chicken-tikka.jfif"
     },
     {
@@ -27,7 +29,9 @@
       "portion": "16 pcs",
       "price": 560,
       "description": "Spicy and tangy chicken boti with a kick",
-      "tags": ["Spicy"],
+      "tags": [
+        "Spicy"
+      ],
       "image": "/images/Chatkhara-Boti.jfif"
     },
     {
@@ -67,7 +71,9 @@
       "portion": "6 pcs",
       "price": 840,
       "description": "Silky smooth reshmi kabab, melt in your mouth",
-      "tags": ["Bestseller"],
+      "tags": [
+        "Bestseller"
+      ],
       "image": "/images/Chicken-Reshmi-Kabab.jfif"
     },
     {
@@ -87,9 +93,22 @@
       "portion": "Special",
       "price": 1290,
       "description": "A complete BBQ feast with all our specialties",
-      "tags": ["Bestseller", "Special"],
+      "tags": [
+        "Bestseller",
+        "Special"
+      ],
       "image": "/images/BBQ-Special-Platter.jfif"
+    },
+    {
+      "category": "Special deal",
+      "id": "10",
+      "name": "pizza",
+      "price": 1000,
+      "image": "/images/pizza.jfif",
+      "portion": "speacial new year offer ",
+      "tags": [
+        "20%OFF"
+      ]
     }
   ]
 }
-
